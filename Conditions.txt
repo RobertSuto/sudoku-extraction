@@ -1,0 +1,37 @@
+1. Librăriile necesare pentru rularea proiectului sunt listate mai jos. Acestea sunt instalante 
+pe conda environment 4.10.3 cu versiunea de python 3.8.12
+
+numpy==1.21.4
+opencv-python==4.5.4.60
+opencv-python-headless==4.5.4.60
+os 
+
+2. Rularea taskurilor
+Fiecare task are 2 fisiere (+ fisierul functii.py care contine functii utile pentru program), unul pentru 
+rularea pe mai multe imagini (sudoku_denumire), altul pentru rularea de imagini individuale 
+(denumire_individual)
+
+Task 1: 
+
+script: sudoku_clasic.py & clasic_individual.py
+function: Pentru a rula sudoku_clasic, la finalul proiectului schimbati pe linia 83 dir_path cu numele directorului 
+unde se afla pozele pentru testare. Functia results_sudoku_clasic(dir_path) se va apela.
+
+Pentru a rula clasic_individual.py, schimbati image_pathul (aflat la linia 7) cu pathul pentru poza pe care
+doriti sa o analizati.
+
+output: outputul se gaseste in pathul 'evaluare\\fisiere_solutie\\Suto_Robert_311\\clasic\\nr_predicted.txt
+
+Task 2:
+
+script: sudoku_jigsaw.py & jigsaw_individual.py
+function: Pentru a rula sudoku_jigsaw, la finalul proiectului schimbati pe linia 144 dir_path cu numele directorului 
+unde se afla pozele pentru testare. Functia results_sudoku_jigsaw(dir_path) se va apela
+
+Pentru a rula jigsaw_individual.py, schimbati image_pathul (aflat la linia 7) cu pathul pentru poza pe care
+doriti sa o analizati.
+output: outputul se gaseste in pathul 'evaluare\\fisiere_solutie\\Suto_Robert_311\jigsaw\\nr_predicted.txt
+
+
+Ambele taskuri dau output la fisiere de tipul _bonus_predicted.txt dar acestea nu trebuie sa fie luate
+in considerare, le-am creat deoarece evalueaza_solutie.py nu rula fara acestea.
